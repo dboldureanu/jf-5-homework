@@ -1,5 +1,8 @@
 package md.tekwill;
 
+import java.util.Arrays;
+import java.util.Scanner;
+
 public class Exercise4 {
 
     /*
@@ -8,6 +11,25 @@ public class Exercise4 {
     OUT: Min: 4; Max: 512.
     */
     public static void main(String[] args) {
-        // write your code here
+        Scanner scanner = new Scanner(System.in);
+        String line = scanner.nextLine();
+
+        int[] ints = Arrays.stream(line.split(","))
+                .mapToInt(Integer::parseInt) // or .summaryStatistics().getMax() .getMin()
+                .toArray();
+
+        int max = ints[0];
+        int min = ints[0];
+        for(int number : ints) {
+            if(max < number) {
+                max = number;
+            }
+
+            if(min > number) {
+                min = number;
+            }
+        }
+
+        System.out.println("Max = " + max + ", min = " + min);
     }
 }

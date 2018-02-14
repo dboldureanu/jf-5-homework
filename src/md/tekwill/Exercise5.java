@@ -1,5 +1,7 @@
 package md.tekwill;
 
+import java.util.Scanner;
+
 public class Exercise5 {
 
     /*
@@ -8,6 +10,9 @@ public class Exercise5 {
     OUT: 4
     */
     public static void main(String[] args) {
-        // write your code here
+        Scanner scanner = new Scanner(System.in);
+        String line = scanner.nextLine();
+
+        System.out.println("Length = " + line.length());
     }
 }
