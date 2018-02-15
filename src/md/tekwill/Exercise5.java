@@ -8,6 +8,7 @@ public class Exercise5 {
     OUT: 4
     */
     public static void main(String[] args) {
-        // write your code here
+        String input = "Java";
+        System.out.println(input.length());
     }
 }

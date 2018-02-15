@@ -1,5 +1,7 @@
 package md.tekwill;
 
+import java.lang.Character;
+
 public class Exercise9 {
 
     /*
@@ -8,7 +10,21 @@ public class Exercise9 {
     IN: Array: {"One", "Two", "Three"}, Letter: T
     OUT: Two, Three
     */
-    public static void main(String[] args) {
-        // write your code here
+    public static void main(String[] args)
+    {
+        String[] words = {"One", "Two", "Three"};
+        char inputLetter = 'T';
+        char[] wordArray;
+        String output = "";
+
+        for (String word : words)
+        {
+            wordArray = word.toCharArray();
+
+            // Ternary hell, should have gone with ifs but it's too late now...
+            output += (Character.toLowerCase(wordArray[0]) == Character.toLowerCase(inputLetter) ? output.length() > 0 ? (", " + word) : word : "");
+        }
+
+        System.out.println(output);
     }
 }

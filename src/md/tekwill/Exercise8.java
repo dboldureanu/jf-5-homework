@@ -8,6 +8,12 @@ public class Exercise8 {
     OUT: 11
     */
     public static void main(String[] args) {
-        // write your code here
+        String[] inputArray = {"One", "Two", "Three"};
+        int length = 0;
+
+        for (String inputElement : inputArray)
+            length += inputElement.length();
+
+        System.out.println(length);
     }
 }

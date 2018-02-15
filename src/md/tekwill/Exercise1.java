@@ -12,6 +12,13 @@ public class Exercise1 {
     300 - 572
     */
     public static void main(String[] args) {
-        // write your code here
+
+        double fahrenheit;
+
+        for (int celsius = 0; celsius <= 300; celsius += 10)
+        {
+            fahrenheit = celsius * 1.8 + 32;
+            System.out.println(celsius + "C - " + (int) fahrenheit + "F");
+        }
     }
 }
