@@ -1,5 +1,7 @@
 package md.tekwill;
 
+import java.util.Scanner;
+
 public class Exercise5 {
 
     /*
@@ -8,6 +10,12 @@ public class Exercise5 {
     OUT: 4
     */
     public static void main(String[] args) {
-        // write your code here
+        Scanner in = new Scanner(System.in);
+
+        System.out.println("Enter the word");
+
+        String word = in.next();
+
+        System.out.println("The length of the word is: "+word.length());
     }
 }
