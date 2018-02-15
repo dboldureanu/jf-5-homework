@@ -20,9 +20,7 @@ public class Exercise3 {
 
         int max = ints[0];
         for(int number : ints) {
-            if(max < number) {
-                max = number;
-            }
+            max = Math.max(max, number);
         }
 
         System.out.println(max);

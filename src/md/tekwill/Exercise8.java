@@ -1,6 +1,8 @@
 package md.tekwill;
 
+import java.util.Arrays;
 import java.util.Scanner;
+import java.util.stream.Collectors;
 
 public class Exercise8 {
 

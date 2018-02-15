@@ -14,7 +14,7 @@ public class Exercise2 {
         int first = scanner.nextInt();
         int second = scanner.nextInt();
 
-        int min = (first >= second) ? first : second;
+        int min = (first >= second) ? first : second; // or Math.max();
 
         System.out.println("Max = " + min);
     }

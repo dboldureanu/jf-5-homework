@@ -1,7 +1,6 @@
 package md.tekwill;
 
 import java.util.Scanner;
-import java.util.Set;
 
 public class Exercise7 {
 

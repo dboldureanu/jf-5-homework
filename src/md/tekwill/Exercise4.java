@@ -21,13 +21,8 @@ public class Exercise4 {
         int max = ints[0];
         int min = ints[0];
         for(int number : ints) {
-            if(max < number) {
-                max = number;
-            }
-
-            if(min > number) {
-                min = number;
-            }
+            max = Math.max(max, number);
+            min = Math.min(min, number);
         }
 
         System.out.println("Max = " + max + ", min = " + min);

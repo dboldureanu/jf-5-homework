@@ -15,7 +15,6 @@ public class Exercise1 {
         for(int i = 0; i <= 300; i+=10) {
             System.out.println(i + "C - " + (int)(i * 1.8 + 32) + "F");
         }
+
     }
-
-
 }
