@@ -7,7 +7,8 @@ public class Exercise2 {
     Input: {14, 7}
     OUT: 7
     */
-    public static void main(String[] args) {
-        // write your code here
+    public static void main(String[] args){
+        //qewqerew
     }
 }
+
