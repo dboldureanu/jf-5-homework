@@ -1,5 +1,7 @@
 package md.tekwill;
 
+import java.util.Scanner;
+
 public class Exercise9 {
 
     /*
@@ -9,6 +11,15 @@ public class Exercise9 {
     OUT: Two, Three
     */
     public static void main(String[] args) {
-        // write your code here
+        Scanner scanner = new Scanner(System.in);
+        String line = scanner.nextLine();
+        String letter = scanner.nextLine();
+        String[] split = line.split(",");
+
+        for(String s : split) {
+            if(s.toLowerCase().startsWith(letter.toLowerCase())) {
+                System.out.println(s);
+            }
+        }
     }
 }

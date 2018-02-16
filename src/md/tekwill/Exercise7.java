@@ -1,5 +1,7 @@
 package md.tekwill;
 
+import java.util.Scanner;
+
 public class Exercise7 {
 
     /*
@@ -12,6 +14,20 @@ public class Exercise7 {
        Total: 3
     */
     public static void main(String[] args) {
-        // write your code here
+        String vowels = "aeoui";
+
+        Scanner scanner = new Scanner(System.in);
+        String line = scanner.nextLine();
+
+        int count = 0;
+
+        for(Character c : line.toCharArray()) {
+            if(vowels.contains(c.toString().toLowerCase())) {
+                System.out.println(c);
+                count++;
+            }
+        }
+
+        System.out.println("Total:" + count);
     }
 }

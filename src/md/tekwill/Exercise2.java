@@ -1,5 +1,7 @@
 package md.tekwill;
 
+import java.util.Scanner;
+
 public class Exercise2 {
 
     /*
@@ -8,6 +10,12 @@ public class Exercise2 {
     OUT: 7
     */
     public static void main(String[] args) {
-        // write your code here
+        Scanner scanner = new Scanner(System.in);
+        int first = scanner.nextInt();
+        int second = scanner.nextInt();
+
+        int min = (first >= second) ? first : second; // or Math.max();
+
+        System.out.println("Max = " + min);
     }
 }
