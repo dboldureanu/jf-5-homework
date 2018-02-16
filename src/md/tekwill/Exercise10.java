@@ -9,6 +9,23 @@ public class Exercise10 {
     OUT: One, Three
     */
     public static void main(String[] args) {
-        // write your code here
+        String[] words = {"One", "Two", "Three"};
+        char inputLetter = 'e';
+        char[] wordArray;
+        String output = "";
+
+        for (String word : words)
+        {
+            wordArray = word.toCharArray();
+            for (char wordLetter : wordArray)
+            {
+                if (Character.toLowerCase(wordLetter) == Character.toLowerCase(inputLetter))
+                {
+                    output += output.length() > 0 ? (", " + word) : word;
+                    break;
+                }
+            }
+        }
+        System.out.println(output);
     }
 }

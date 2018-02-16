@@ -7,7 +7,14 @@ public class Exercise6 {
     {"Java", "Developer", "Software"}
     OUT: Developer
     */
-    public static void main(String[] args) {
-        // write your code here
+    public static void main(String[] args)
+    {
+        String[] inputArray = {"Java", "Developer", "Software"};
+        String maxElement = "";
+
+        for (String inputElement : inputArray)
+            maxElement = inputElement.length() > maxElement.length() ? inputElement : maxElement;
+
+        System.out.println(maxElement);
     }
 }
