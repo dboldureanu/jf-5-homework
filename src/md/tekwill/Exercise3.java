@@ -15,14 +15,14 @@ public class Exercise3 {
         String line = scanner.nextLine();
 
         int[] ints = Arrays.stream(line.split(","))
-                .mapToInt(Integer::parseInt) // or .max()
+                .mapToInt(Integer::parseInt) // or .min()
                 .toArray();
 
-        int max = ints[0];
+        int min = ints[0];
         for(int number : ints) {
-            max = Math.max(max, number);
+            min = Math.min(min, number);
         }
 
-        System.out.println(max);
+        System.out.println(min);
     }
 }
