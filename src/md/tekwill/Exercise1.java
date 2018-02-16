@@ -12,6 +12,8 @@ public class Exercise1 {
     300 - 572
     */
     public static void main(String[] args) {
-        // write your code here
+        for (int i = 0; i < 301; i+=10){
+            System.out.println(i + "C - " + (i*9/5+32)+"F");
+        }
     }
 }
