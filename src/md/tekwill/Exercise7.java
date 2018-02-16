@@ -19,7 +19,7 @@ public class Exercise7 {
         int count = 0;
 
         System.out.println("Enter the string");
-        word = in.nextLine().toLowerCase();
+        word = in.nextLine().toLowerCase().replaceAll("[^a-z]", "");
 
         for (int i = 0;i<word.length();i++)
         {
