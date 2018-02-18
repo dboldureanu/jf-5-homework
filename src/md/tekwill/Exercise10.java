@@ -1,5 +1,7 @@
 package md.tekwill;
 
+import java.util.Scanner;
+
 public class Exercise10 {
 
     /*
@@ -9,6 +11,11 @@ public class Exercise10 {
     OUT: One, Three
     */
     public static void main(String[] args) {
-        // write your code here
+        String[] myString1 = {"One","Two","Three","Four","Five"};
+        for (int i = 0; i < 5; i++) {
+            if (myString1[i].contains("e")){
+                System.out.println(myString1[i]);
+            }
+        }
     }
 }
