@@ -1,5 +1,7 @@
 package md.tekwill;
 
+import com.sun.deploy.util.StringUtils;
+
 public class Exercise10 {
 
     /*
@@ -9,6 +11,16 @@ public class Exercise10 {
     OUT: One, Three
     */
     public static void main(String[] args) {
-        // write your code here
+        String[] myArr = {"One","Two","Three"};
+        String word = new String();
+
+        int sum = 0;
+
+        char[] c = word.toCharArray();
+        for (int i = 0; i < c.length; i++) {
+            if (c[i] == 'e') {    //('y')('u')('i')('o')('e')
+                sum++;
+            }
+        }
     }
 }
