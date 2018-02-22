@@ -11,21 +11,15 @@ public class Exercise6 {
     */
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
-        System.out.println("Type your words :");
-        String x = s.nextLine();
-        System.out.println(x);
-        System.out.println(x.length());
-//        String[] date = x.trim().split(",");
-//
-//
-//
-//
-//        int y = s.nextInt();       }
-//        int[] k = {y};
+        System.out.println("Type your words :"); //"Java", "Developer", "Software"
+        String[] x = s.nextLine().split("\\s");
 
-       // System.out.println("the numbers of letters are : " +y);
-       /* int max = q[0];
-            for(y = 0; y < q.length; y++)rt yui i
-            if(max < y) max = y;}*/
+        int sum = 0;
+        for(int i = 0;i < x.length; i++)
+        {
+            //  sum = sum+ size;
+        }
+
+        System.out.println("the longest line in an array are: " + x);
     }
 }
