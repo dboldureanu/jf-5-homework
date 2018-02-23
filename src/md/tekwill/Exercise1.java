@@ -13,5 +13,12 @@ public class Exercise1 {
     */
     public static void main(String[] args) {
         // write your code here
+        int  c = 0, f = 32;
+
+        for (c=0; c<=300; c+=10){
+            f=c*9/5+32;
+            System.out.println(c + "C - " + f+ "F");
+
+        }
     }
 }
